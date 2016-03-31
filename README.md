@@ -1,7 +1,7 @@
 # weathercast
 A single page angularjs app, use nodejs to server the files as backend.
 
-This app is comepletely written with angularjs, all code are included in public file. 
+This app is comepletely written with angularjs, all angular components are included in public file. 
 Used express only for the purpose to host files as server. There is no database used in this app.
 It can be used as template to use nodejs to host pure angularjs web application.
 
