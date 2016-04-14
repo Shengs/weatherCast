@@ -7,7 +7,9 @@ It can be used as template to use nodejs to host pure angularjs web application.
 
 ## [Demo](http://weathercast-shihengz.rhcloud.com)
 
-This demo version is running on [RedHat's OpenShift](https://www.openshift.com/pricing/index.html). They provide free tier environment to run at most 3 apps with 1GB storage for each. They require to format server and port in node starting file like this:
+This demo version is running on [RedHat's OpenShift](https://www.openshift.com/pricing/index.html). They provide free tier environment to run at most 3 apps with 1GB storage for each. When you go to the demo, it probably would give you an error at first time since OpenShift seems doesnt run this app all the time but initiate it when the first attempt to link happened, but it should work if you refresh the page after getting the error. 
+
+They require to format server and port in node starting file like this:
 ```javascript
 In package.json:
 
@@ -26,5 +28,5 @@ server.listen(server_port, server_ip_address, function () {
   console.log( "Listening on " + server_ip_address + ", server_port " + port )
 });
 ```
-When you go to the demo, it probably would give you an error at first time since OpenShift seems doesnt run this app all the time but initiate it when the first attempt to link happened, but it should work if you refresh the page after getting the error.
+
 Feel free to use this template to host your pure angular app. You can also host your app on [heroku](https://www.heroku.com/pricing), it also provides free tier for ruuning and testing small app with 512MB RAM.
